@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #222;
+    color: #FFF;
+}
+
+header#top {
+    text-align: center;
+    padding: 2.4rem;
+    animation: spin infinite 2s ease-in-out;
+}
+
+main#middle {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 45px 0;    
+}
+
+main#middle img.me {
+    border-radius: 50px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 5%;
+    transition: all 2s ease-in-out;    
+}
+
+main#middle img.me:hover {
+    transform: scale(1.2);
+}
+
+main#middle .text {
+    padding: 1%;
+}
+
+main#middle .text > h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+footer#bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
